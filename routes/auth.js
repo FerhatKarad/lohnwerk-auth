@@ -92,7 +92,7 @@ router.get('/user', (req, res, next) => {
 	
 	User.find()
 	  .then((response) => {
-		res.status(200).json({ pokemoresponsens })
+		res.status(200).json({ response })
 	  })
 	  
 	  .catch(err => res.status(400).json(err))
